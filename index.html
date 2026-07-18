@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BPOptima — Adaptive Stakeholder Experience</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">BP<span>Optima</span></div>
+  <div class="prototype-tag">CONCEPT PROTOTYPE</div>
+</nav>
+
+<section class="hero">
+  <div class="eyebrow">AI-ERA ENTERPRISE WEB EXPERIENCE</div>
+
+  <h1>
+    One product.<br>
+    <span>Different questions.</span>
+  </h1>
+
+  <p>
+    Enterprise buyers don't all evaluate AI the same way.
+    Choose your perspective and see BPOptima through the information
+    that matters most to you.
+  </p>
+
+  <div class="role-buttons">
+    <button onclick="personalize('risk', this)">Chief Risk Officer</button>
+    <button onclick="personalize('cto', this)">CTO</button>
+    <button onclick="personalize('engineer', this)">Engineer</button>
+    <button onclick="personalize('investor', this)">Investor</button>
+  </div>
+</section>
+
+
+<section id="loading" class="loading hidden">
+  <div class="loader"></div>
+  <h3>Adapting your experience...</h3>
+  <p>Prioritizing relevant product evidence.</p>
+</section>
+
+
+<section id="experience" class="experience hidden">
+
+  <div class="personalization-bar">
+    <div>
+      <span class="status-dot"></span>
+      Experience adapted for
+      <strong id="role-name"></strong>
+    </div>
+
+    <span>Visitor-controlled personalization</span>
+  </div>
+
+
+  <div class="role-intro">
+    <div>
+      <p class="eyebrow">YOUR PERSPECTIVE</p>
+      <h2 id="role-title"></h2>
+      <p id="role-description"></p>
+    </div>
+
+    <div class="priority-box">
+      <span>PRIORITY</span>
+      <strong id="priority"></strong>
+    </div>
+  </div>
+
+
+  <div class="section-title">
+    <p>RECOMMENDED FOR YOU</p>
+    <h2>Start with the evidence that matters.</h2>
+  </div>
+
+
+  <div id="cards" class="cards"></div>
+
+
+  <div class="decision-flow">
+    <p class="eyebrow">HOW THE PRODUCT WORKS</p>
+    <h2>From evidence to auditable decisions</h2>
+
+    <div class="flow">
+      <div>
+        <span>01</span>
+        <h3>Understand</h3>
+        <p>Turn documents, images and logs into structured evidence.</p>
+      </div>
+
+      <div class="arrow">→</div>
+
+      <div>
+        <span>02</span>
+        <h3>Decide</h3>
+        <p>Apply deterministic enterprise policy and decision logic.</p>
+      </div>
+
+      <div class="arrow">→</div>
+
+      <div>
+        <span>03</span>
+        <h3>Route</h3>
+        <p>Send the decision to the right workflow with an audit trail.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="why-box">
+    <div>
+      <p class="eyebrow">WHY DID THE EXPERIENCE CHANGE?</p>
+      <h2>Personalization without losing trust.</h2>
+
+      <p id="why-text"></p>
+    </div>
+
+    <div class="trust-list">
+      <p>✓ No claims are generated</p>
+      <p>✓ No content is hidden permanently</p>
+      <p>✓ Visitor chooses their perspective</p>
+      <p>✓ Only verified content is reprioritized</p>
+    </div>
+  </div>
+
+</section>
+
+
+<footer>
+  <p>
+    Concept prototype created for the BPOptima Forward Deployed Engineer
+    Trainee assignment.
+  </p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
